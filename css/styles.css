@@ -17,7 +17,7 @@ div{
     border-radius: 20px;
     align-items: center;
     text-align: center;
-    margin: 150px auto;
+    margin: 100px auto;
 }
 
 img{
@@ -126,4 +126,5 @@ h4{
     ul li{
         margin-bottom: 20px;
     }
+
 }
