@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900');
+
+body{
+    font-family: 'Inter';
+    background-color: #003554;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    place-items: center;
+    height: 100vh;
+}
+
+div{
+    background-color: #006494;
+    width: 400px;
+    /* height: 250px; */
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 150px auto;
+}
+
+img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 15px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Roboto Serif';
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+ ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    /* width: fit-content; */
+    margin: 20px 120px;
+}
+
+ul li{
+    margin-bottom: 10px;
+    border: solid 3px #003554;
+    border-radius: 10px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    padding: 11px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #003554;
+    transform: scale(1.05);
+}
+
+ul li:active {
+    background-color: #001d2f;
+    transform: scale(0.95);
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li:hover a {
+    color: white;
+}
+
+h4{
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    div{
+        /* margin-right: 30px;
+        margin-left: 30px; */
+        margin: 0 auto; /*centered*/
+        width: 90%;
+    }
+
+    ul{
+    /* margin: 20px 120px; */
+    margin: 20px 90px
+    }
+}
+
+
+/* iPads and tablets */
+@media screen and (min-width: 481px) and (max-width: 890px){
+    div{
+        margin-right: 50px;
+        margin-left: 50px;
+        margin: 10px 50px;
+        width: 75%; 
+        height: auto; 
+    }
+
+    img{
+        margin-top: 30px;
+        height: 150px;
+        width: 150px;
+    }
+
+    ul{
+        margin: 20px 180px;
+    }
+
+    ul li{
+        margin-bottom: 20px;
+    }
+}
